@@ -1,6 +1,6 @@
 ﻿namespace Monty_Hall_WebAPI.Models
 {
-    public class MontyHallSimulations : HttpResponseMessage
+    public class MontyHallSimulations
     {
         public string? NumberOfSimulations { get; set; }
 

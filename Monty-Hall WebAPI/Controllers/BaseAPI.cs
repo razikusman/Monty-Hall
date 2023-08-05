@@ -12,10 +12,12 @@ namespace Monty_Hall_WebAPI.Controllers
 {
     public class BaseAPI : Controller
     {
-        protected IActionResult ToJson(HttpResponseMessage obj)
+        protected IActionResult ToJson(dynamic obj)
         {
-            obj.StatusCode = HttpStatusCode.OK;
-            return Ok(JsonConvert.SerializeObject(obj));
+            apiResult result = new apiResult();
+            result.StatusCode = HttpStatusCode.OK;
+            result.MontyHallSimulations = obj;
+            return Ok(JsonConvert.SerializeObject(result));
         }
     }
 }
