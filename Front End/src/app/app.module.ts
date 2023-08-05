@@ -4,16 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore'; // Example: importing Firestore module
-import { environment } from '../environments/environment';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { MontyHalldashBoardComponent } from './Monty-Hall-DashBoard/Monty-Hall-dashBoard.component';
+import { MontyHallUserInputFormComponent } from './Monty-Hall-DashBoard/UserInputForm/Monty-Hall-UserInputForm.component';
+import { MatButtonModule } from '@angular/material/button';
+import { LoaderComponent } from './Loader/Loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MontyHalldashBoardComponent
+    MontyHalldashBoardComponent,
+    MontyHallUserInputFormComponent,
+    LoaderComponent
     
   ],
   imports: [
@@ -21,7 +24,8 @@ import { MontyHalldashBoardComponent } from './Monty-Hall-DashBoard/Monty-Hall-d
     AppRoutingModule,
     ReactiveFormsModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
     
     
   ],

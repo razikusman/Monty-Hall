@@ -1,3 +1,26 @@
-<div>
+<div class="container">
     <h1>working..!</h1>
+    {{status}}
+    {{simulationResult.NumberOfSimulations}}
+    {{simulationResult.SwitchDoor}}
+    {{simulationResult.WinPercent}}
+
+    <app-userinput (Data)="handleEvent($event)"></app-userinput>
+    <div class="loader-overlay" *ngIf="isLoading">
+        <div class="loader">
+            <app-Loader [isLoading]="isLoading"></app-Loader>
+            Loading...
+        </div>
+      </div>
+   
+    <div class="container mt-5">
+        <div class="card border-primary shadow-lg">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                    [ngStyle]="{'width': simulationResult.WinPercent}">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

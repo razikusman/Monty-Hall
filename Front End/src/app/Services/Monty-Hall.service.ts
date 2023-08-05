@@ -15,12 +15,12 @@ export class MontyHallService {
     
   }
   private apiUrl = 'https://localhost:44343/api/';
-    Postata(): Observable<any>{
-        return this.http.post(this.apiUrl+"GameSimulator?simulations=2&switchorNot=false",null).pipe(map(data => {
-            let response = data as HttpHeaderResponse;
+    Postata(simulations = 0, switchorNot = false): Observable<any>{
+        return this.http.post(this.apiUrl+"GameSimulator?simulations="+simulations +"&switchorNot="+switchorNot,null).pipe(map(data => {
+            let response = data as any;
             console.log(response.headers);
             if(response.ok){}
-            return response
+            return response.MontyHallSimulations;
         }));
     }
 }
