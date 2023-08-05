@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+.ids-contaner-employee{
+    margin-top: 0px !important;
+    margin-left: 220px!important;
+    margin-right: 130px!important;
+}
+.ids-titles-emp{
+    padding-left: 15px;
+}
+
+.ids-emp-inp-laform-control{
+    margin-bottom: 30px;
+}
+
+  .ids-emp-inp-form-group{
+    padding:  0px ;
+    margin: 0px;
+  }
+
+  .ids-emp-inp-label{
+    color: rgb(95, 95, 95);
+    font-size: 10px !important;
+  }
+
+  .card-ids-from {
+    border: 2px solid hsl(0, 4%, 91%) !important;
+    padding: 20px 12px;
+    height: 400px;
+    background-color: white;
+  }
+
+  .card-ids-view {
+    border: 2px solid hsl(0, 4%, 91%) !important;
+    padding: 20px 12px;
+    height: 400px;
+    background-color: white;
+  }
+  
+  .ids-error-input {
+    border: 1px solid #fc7b47 !important;
+  }
+
+  .ids-Reset-Button{
+    border: 1px solid #fc7b47 !important;
+    color: #fc7b47 !important;
+    background-color: rgb(255, 255, 255) !important;
+    margin-right: 10px !important;
+  }
+
+  .ids-Save-Button{
+    color: #ffffff !important;
+    background-color: #fc7b47 !important;
+    border: none !important;
+    margin-right: 10px !important;
+  }
+
+  .ids-Cancel-Button{
+    border: 1px solid #fc7b47 !important;
+    color: #fc7b47 !important;
+    background-color: rgb(255, 255, 255) !important;
+    margin-right: 10px !important;
+    font-size: 0.9rem !important;
+    padding: 10px 30px !important;
+  }
+
+  .ids-Confirm-Button{
+    color: #ffffff !important;
+    background-color: #fc7b47 !important;
+    border: none !important;
+    margin-right: 10px !important;
+    font-size: 0.9rem  !important;
+    padding: 10px 30px !important;
+  }
+
+  .ids-table-raw{
+    background-color: white !important;
+    border-bottom: 1px solid #e9ecef !important;
+    
+  }
+
+  .table-bordered td{
+    border: none !important;
+  }
+
+  .ids-logo{
+    width: 80px;
+    height: 20px;
+  }
+
+  button{
+    font-size: 15px !important;
+    padding: 12px 60px !important;
+
+  }
+
+  .ids-sub-title{
+    margin-top: 40px;
+  }
+
+  .material-icons {
+    color: #fc7b47;
+  }
+
+  .custom-dialog-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #9e9e9e69;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px !important;
+    margin-left: 220px;
+    margin-right: 130px;
+  }
+
+  .ids-wraper-customDialog{
+    width: auto;
+    height: auto;
+    background-color: white;
+    right: 10px;
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    top: 200px;
+    right: 600px;
+  }
+
+  tr{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    font-weight: bold;
+  }
