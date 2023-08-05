@@ -1,0 +1,46 @@
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\appsettings.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Monty-Hall WebAPI.exe
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Monty-Hall WebAPI.deps.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Monty-Hall WebAPI.runtimeconfig.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Monty-Hall WebAPI.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Monty-Hall WebAPI.pdb
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\System.Web.Http.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.csproj.AssemblyReference.cache
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.AssemblyInfoInputs.cache
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.AssemblyInfo.cs
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.csproj.CoreCompileInputs.cache
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.Monty-Hall WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.Monty-Hall WebAPI.props
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Monty-Hall WebAPI.props
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Monty-Hall WebAPI.props
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\scopedcss\bundle\Monty-Hall WebAPI.styles.css
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.csproj.CopyComplete
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\refint\Monty-Hall WebAPI.dll
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.pdb
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\Monty-Hall WebAPI.genruntimeconfig.cache
+D:\usman\Study\DCE\BackEnd\Monty-Hall\Monty-Hall WebAPI\obj\Debug\net6.0\ref\Monty-Hall WebAPI.dll
