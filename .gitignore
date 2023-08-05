@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Monty-Hall WebAPI/bin/
+/Monty-Hall WebAPI/bin/Debug/net6.0/Monty-Hall WebAPI.pdb
+/MotntyHall.Services/obj/Debug/net6.0
+/Monty-Hall WebAPI/obj/Debug/net6.0/Monty-Hall WebAPI.csproj.AssemblyReference.cache
+/Monty-Hall WebAPI/obj/Debug/net6.0/Monty-Hall WebAPI.csproj.CoreCompileInputs.cache
+/Monty-Hall WebAPI/obj/Debug/net6.0/Monty-Hall WebAPI.dll
+/Monty-Hall WebAPI/obj/Debug/net6.0/Monty-Hall WebAPI.pdb
