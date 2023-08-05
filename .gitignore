@@ -13,3 +13,4 @@
 /Monty-Hall WebAPI/.vs/Monty-Hall WebAPI/DesignTimeBuild/.dtbcache.v2
 /Monty-Hall WebAPI/.vs/Monty-Hall WebAPI/FileContentIndex/3499abf6-851a-43a2-9374-dca45e618af6.vsidx
 *.vsidx
+/Monty-Hall WebAPI/obj/Debug/net6.0/refint/Monty-Hall WebAPI.dll
