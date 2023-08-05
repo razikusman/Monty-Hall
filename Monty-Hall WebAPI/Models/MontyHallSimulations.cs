@@ -4,7 +4,7 @@
     {
         public string? NumberOfSimulations { get; set; }
 
-        public double WinPercent { get; set;}
+        public string WinPercent { get; set;}
 
         public string? SwitchDoor { get; set;}
     }
