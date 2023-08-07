@@ -11,7 +11,7 @@ export class MontyHallUserInputFormComponent implements OnInit {
 
   form: any;
   receivedID: string | undefined;
-  isToggled = false;
+  isSwitched = false;
 
   @Output() Data = new EventEmitter<any>();
 
@@ -31,7 +31,7 @@ export class MontyHallUserInputFormComponent implements OnInit {
     //create forms with validators
     this.form = this.formBuilder.group({
       Simulations: ['', Validators.required],
-      SwitchorNot: [emp ? emp[0].Designation : '', Validators.required]
+      SwitchorNot: ['']
     });
 
   }
@@ -39,23 +39,23 @@ export class MontyHallUserInputFormComponent implements OnInit {
   onSubmit() { }
 
   save() {
-    let _emp = {
+    let _data = {
       Simulations: 0,
       SwitchorNot:false
     }
     if (this.form.valid) {
 
       //get the data from formcontrol
-      _emp.Simulations = this.form.get('Simulations')?.value;
-      _emp.SwitchorNot = this.form.get('SwitchorNot')?.value;
+      _data.Simulations = this.form.get('Simulations')?.value;
+      _data.SwitchorNot = this.form.get('SwitchorNot')?.value;
 
-      this.Data.emit(_emp);
+      this.Data.emit(_data);
 
     }
   }
 
   toggle() {
-    this.isToggled = !this.isToggled;
+    this.isSwitched = !this.isSwitched;
   }
 
 }

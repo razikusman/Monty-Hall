@@ -10,6 +10,11 @@ import { MontyHalldashBoardComponent } from './Monty-Hall-DashBoard/Monty-Hall-d
 import { MontyHallUserInputFormComponent } from './Monty-Hall-DashBoard/UserInputForm/Monty-Hall-UserInputForm.component';
 import { MatButtonModule } from '@angular/material/button';
 import { LoaderComponent } from './Loader/Loader.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,10 @@ import { LoaderComponent } from './Loader/Loader.component';
     ReactiveFormsModule,
     MatDialogModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSlideToggleModule,
     
     
   ],

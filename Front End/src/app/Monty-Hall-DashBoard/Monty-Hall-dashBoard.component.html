@@ -1,25 +1,34 @@
 <div class="container">
-    <h1>working..!</h1>
-    {{status}}
-    {{simulationResult.NumberOfSimulations}}
-    {{simulationResult.SwitchDoor}}
-    {{simulationResult.WinPercent}}
+    <div class="d-flex justify-content-center">
+        <img class="shadow bg-white rounded row" style="height: 400px;" src="assets/images/Monty-Hall-image.png" alt="">
+    </div>
+    <br>
 
-    <app-userinput (Data)="handleEvent($event)"></app-userinput>
     <div class="loader-overlay" *ngIf="isLoading">
         <div class="loader">
             <app-Loader [isLoading]="isLoading"></app-Loader>
-            Loading...
+
         </div>
-      </div>
-   
-    <div class="container mt-5">
-        <div class="card border-primary shadow-lg">
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                    [ngStyle]="{'width': simulationResult.WinPercent}">
+    </div>
+
+    <div class="">
+        <div class="row">
+            <app-userinput class="col-md-6" (Data)="handleEvent($event)"></app-userinput>
+
+            <div class="card rounded col-md-6">
+                <mat-label>Number of Simulations : {{simulationResult.NumberOfSimulations}}</mat-label>
+                <br>
+                <mat-label>Switch the Door : {{simulationResult.SwitchDoor}}</mat-label>
+                <br>
+                <mat-label>Win Percent(%) : {{simulationResult.WinPercent}}</mat-label>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                        [ngStyle]="{'width': simulationResult.WinPercent}">
+                    </div>
                 </div>
+                <br>
             </div>
         </div>
     </div>
