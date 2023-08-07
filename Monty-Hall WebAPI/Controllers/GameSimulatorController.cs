@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Monty_Hall_WebAPI.Models;
+using Monty_Hall_WebAPI.Services;
 using Newtonsoft.Json;
 using System.Net;
 using System.Text.Json;
@@ -7,7 +8,7 @@ using System.Web.Http;
 
 namespace Monty_Hall_WebAPI.Controllers
 {
-    [ApiController]
+    //[ApiController]
     [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
     public class GameSimulatorController : BaseAPI
     {
