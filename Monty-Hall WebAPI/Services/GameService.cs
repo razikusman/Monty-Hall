@@ -13,50 +13,60 @@ namespace Monty_Hall_WebAPI.Services
             simulation.NumberOfSimulations = simulations.ToString(); //number of simulation
             simulation.SwitchDoor = switchorNot.ToString(); // switching status 
 
-            double winCount = 0; // initila wincount with 0
-
-            for (int i = 0; i < simulations; i++)
+            try
             {
 
-                //select Random winning Door
-                var _winDoor = doorSelection();
+                double winCount = 0; // initila wincount with 0
 
-                // select Random Player Choice Door
-                var _playerChoiceDoor = doorSelection();
-
-                //host opening door in Random
-                var _hostOpeningDoor = doorSelection();
-
-                //the door shouldnt be of winning or playerchoice
-                while (_hostOpeningDoor == _winDoor || _hostOpeningDoor == _playerChoiceDoor)
+                for (int i = 0; i < simulations; i++)
                 {
-                    _hostOpeningDoor = doorSelection();
-                }
 
-                //if player choos to switch the door
-                if (switchorNot == true)
-                {
-                    var previousechoice = _playerChoiceDoor;
+                    //select Random winning Door
+                    var _winDoor = doorSelection();
 
-                    //select a new door
-                    _playerChoiceDoor = doorSelection();
+                    // select Random Player Choice Door
+                    var _playerChoiceDoor = doorSelection();
 
-                    //if previous and current are same create a new or its host selected one
-                    while (_playerChoiceDoor == previousechoice || _playerChoiceDoor == _hostOpeningDoor)
+                    //host opening door in Random
+                    var _hostOpeningDoor = doorSelection();
+
+                    //the door shouldnt be of winning or playerchoice
+                    while (_hostOpeningDoor == _winDoor || _hostOpeningDoor == _playerChoiceDoor)
                     {
-                        _playerChoiceDoor = doorSelection();
+                        _hostOpeningDoor = doorSelection();
                     }
+
+                    //if player choos to switch the door
+                    if (switchorNot == true)
+                    {
+                        var previousechoice = _playerChoiceDoor;
+
+                        //select a new door
+                        _playerChoiceDoor = doorSelection();
+
+                        //if previous and current are same create a new or its host selected one
+                        while (_playerChoiceDoor == previousechoice || _playerChoiceDoor == _hostOpeningDoor)
+                        {
+                            _playerChoiceDoor = doorSelection();
+                        }
+                    }
+
+                    //check wining or not
+                    winCount += _playerChoiceDoor == _winDoor ? 1 : 0;
+
                 }
 
-                //check wining or not
-                winCount += _playerChoiceDoor == _winDoor ? 1 : 0;
+                //at the ENd of all simulation calculte percentage of win
+                simulation.WinPercent = Math.Round((winCount / simulations * 100), 2).ToString() + "%";
 
+                return simulation;
             }
 
-            //at the ENd of all simulation calculte percentage of win
-            simulation.WinPercent = (winCount / simulations * 100).ToString() + "%";
-
-            return simulation;
+            catch (Exception ex)
+            {
+                simulation.WinPercent = "0%";
+                return simulation;
+            }
         }
 
         private int doorSelection()

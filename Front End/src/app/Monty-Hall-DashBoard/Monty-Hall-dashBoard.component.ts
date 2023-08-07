@@ -14,6 +14,7 @@ export class MontyHalldashBoardComponent implements OnInit {
     postSubscriber = new Subscription();
     simulationResult = new MontyHallSimulations();
     isLoading =  false;
+    error: string | undefined;
 
   constructor(private mService :MontyHallService){ 
   }
@@ -26,12 +27,22 @@ export class MontyHalldashBoardComponent implements OnInit {
   handleEvent(e : any){
     this.showLoader()
     console.log("data" + e);
-    this.postSubscriber = this.mService.Postata(Number(e.Simulations),Boolean(e.SwitchorNot)).subscribe( data => {
+    this.postSubscriber = this.mService.Postata(Number(e.Simulations),Boolean(e.SwitchorNot)).subscribe( 
+        (data) => {
         this.status = "Loaded"
         console.log(data)
         this.simulationResult = data;
         this.hideLoader();
-    });
+        },
+
+        (error) => {
+            // Handle error from catchError callback here
+            this.error = error.toString()
+            console.log('Error occurred in subscription:', error);
+            this.hideLoader();
+        }
+    );
+    
   }
 
   showLoader() {

@@ -10,14 +10,25 @@ using System.Web.Http;
 
 namespace Monty_Hall_WebAPI.Controllers
 {
-    public class BaseAPI : Controller
+    public class BaseAPI : ControllerBase
     {
-        protected IActionResult ToJson(dynamic obj)
+        protected apiResult<IActionResult> result = new apiResult<IActionResult>();
+        protected apiResult<IActionResult> ToJson(dynamic obj)
         {
-            apiResult result = new apiResult();
+            
             result.StatusCode = HttpStatusCode.OK;
             result.MontyHallSimulations = obj;
-            return Ok(JsonConvert.SerializeObject(result));
+            var json = JsonConvert.SerializeObject(obj);
+            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+            result.Content = content;
+
+            return result;
+        }
+
+        protected apiResult<IActionResult> EndedWithError(Exception e) 
+        {
+            result.StatusCode = HttpStatusCode.BadRequest;
+            return result;
         }
     }
 }

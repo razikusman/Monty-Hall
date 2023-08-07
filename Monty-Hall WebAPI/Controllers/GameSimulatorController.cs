@@ -18,16 +18,25 @@ namespace Monty_Hall_WebAPI.Controllers
 
 
         [Microsoft.AspNetCore.Mvc.HttpPost]
-        public IActionResult SimulateGames(long simulations = 0, bool switchorNot = false)
+        public apiResult<IActionResult> SimulateGames(long simulations = 0, bool switchorNot = false)
         {
+            try
+            {
+                //random number generator
 
-            //random number generator
-
-            GameService gameService = new GameService();
-            var simulationResult = gameService.getResult(simulations, switchorNot);
+                GameService gameService = new GameService();
+                var simulationResult = gameService.getResult(simulations, switchorNot);
 
 
-            return ToJson(simulationResult);
+                return ToJson(simulationResult);
+            }
+            catch (Exception e)
+            {
+
+                return EndedWithError(e);
+            }
+
+            
         }
     }
 }

@@ -1,5 +1,5 @@
 export class MontyHallSimulations {
-    NumberOfSimulations: string | undefined;
-    WinPercent: string | undefined;
-    SwitchDoor: string | undefined;
+    numberOfSimulations: string | undefined;
+    winPercent: string | undefined;
+    switchDoor: string | undefined;
 }

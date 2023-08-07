@@ -15,17 +15,18 @@
         <div class="row">
             <app-userinput class="col-md-6" (Data)="handleEvent($event)"></app-userinput>
 
-            <div class="card rounded col-md-6">
-                <mat-label>Number of Simulations : {{simulationResult.NumberOfSimulations}}</mat-label>
+            <div class="card rounded col-md-6 container">
+                <h5>{{error}}</h5>
+                <mat-label>Number of Simulations : {{simulationResult.numberOfSimulations}}</mat-label>
                 <br>
-                <mat-label>Switch the Door : {{simulationResult.SwitchDoor}}</mat-label>
+                <mat-label>Switch the Door : {{simulationResult.switchDoor}}</mat-label>
                 <br>
-                <mat-label>Win Percent(%) : {{simulationResult.WinPercent}}</mat-label>
-                <br>
+                <mat-label>Win Percent(%) : {{simulationResult.winPercent}}</mat-label>
+                
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                        [ngStyle]="{'width': simulationResult.WinPercent}">
+                        [ngStyle]="{'width': simulationResult.winPercent}">{{simulationResult.winPercent}}
                     </div>
                 </div>
                 <br>
